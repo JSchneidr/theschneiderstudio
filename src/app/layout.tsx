@@ -30,8 +30,8 @@ export default function RootLayout({
     <html lang="pt-BR" className={firaSans.variable}>
       <body className='min-h-screen flex flex-col bg-radial from-blue-950 to-slate-950 text-slate-50'>
         <ToastContainer
-          position="bottom-right" // Posição preferida
-          autoClose={5000} // Fecha após 5 segundos
+          position="bottom-right"
+          autoClose={5000}
           hideProgressBar={false}
           newestOnTop={false}
           closeOnClick
@@ -39,7 +39,7 @@ export default function RootLayout({
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="colored" // Ou "light", ou "colored"
+          theme="colored"
         />
         <Navbar />
         <main className="container mx-auto px-4 py-8 flex-grow">

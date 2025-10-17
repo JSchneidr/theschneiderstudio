@@ -16,7 +16,7 @@ interface CardProps {
     tech?: string[]
 }
 
-const techIconMap: { [key: string]: React.ComponentType<any> } = {
+const techIconMap: { [key: string]: React.ComponentType<React.SVGProps<SVGSVGElement>> } = {
     'React': ReactIcon,
     'Tailwind CSS': TailwindIcon,
     'Blender': BlenderIcon,
@@ -45,7 +45,7 @@ export default function Card({ imageUrl, title, category, description, linkUrl, 
                     {tech && tech.map((techName, index) => {
                         const IconComponent = techIconMap[techName];
                         return IconComponent ? (
-                            <IconComponent key={index} className="size-5 hover:text-orange-500" title={techName} />
+                            <IconComponent key={index} className="size-5 hover:text-orange-500" />
                         ) : (
                             <p key={index} className="text-xs bg-slate-800 px-2 py-1 rounded">{techName}</p>
                         );

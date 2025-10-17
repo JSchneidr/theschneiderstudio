@@ -1,7 +1,11 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import profilePic from '@/content/profile-pic.png'
 import foto from '@/content/profile-pic-square.png'
+
+export const metadata: Metadata = {
+  title: 'Sobre',
+  description: 'Conheça um pouco sobre mim.'
+}
 
 
 export default function SobrePage() {
@@ -14,7 +18,7 @@ export default function SobrePage() {
             alt="Foto de perfil"
             className=" rounded-2xl aspect-square object-contain shadow-md md:size-80 float-left m-4"
           />
-          <h2 className='text-4xl text-center font-black mt-8 mb-4 whitespace-pre-line'>Olá, sou Jorge Schneider</h2>
+          <h2 className='text-4xl text-start font-black mt-8 mb-4 whitespace-pre-line'>Olá, sou Jorge Schneider</h2>
           <p className='whitespace-pre-line indent-8 text-lg'>
             Minha jornada profissional começou atrás das lentes, capturando momentos e contando histórias através da fotografia e do vídeo. 
             A busca pela imagem perfeita me ensinou sobre composição, luz, e mais importante, sobre como transmitir emoção.
@@ -23,7 +27,7 @@ export default function SobrePage() {
             Hoje, eu uno esses dois mundos. Utilizo minha sensibilidade estética de fotógrafo para criar interfaces bonitas e intuitivas, 
             e minha habilidade técnica de desenvolvedor para garantir que elas sejam rápidas, seguras e eficientes.
           </p>
-          <h2 className='text-4xl text-center font-black mt-8 mb-4 whitespace-pre-line'>Habilidades</h2>
+          <h2 className='text-4xl text-start font-black mt-8 mb-4 whitespace-pre-line'>Habilidades</h2>
           <p className='whitespace-pre-line indent-8 text-lg'>
             Minha expertise reside na interseção entre o design tridimensional e o desenvolvimento web. 
             Crio modelos e animações 3D que dão vida a produtos e conceitos, e traduzo essa visão criativa em experiências web interativas e de alta performance. 
